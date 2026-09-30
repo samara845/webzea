@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Webzea – Your Digital Growth Partner</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600;700&family=Space+Grotesk:wght@500;700&family=Baloo+2:wght@600;800&display=swap">
+<style>
+:root{--bg:#f7f8fc;--card:#fff;--tx:#151a2e;--mu:#5c6480;--bd:#e3e6f1;--pr:#5b3df5;--ac:#00c2a8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1120;--card:#171b30;--tx:#eef0fa;--mu:#a0a7c4;--bd:#2a2f4d}}
+:root[data-theme="dark"]{--bg:#0e1120;--card:#171b30;--tx:#eef0fa;--mu:#a0a7c4;--bd:#2a2f4d}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px);scroll-behavior:smooth}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:Poppins,system-ui,sans-serif;line-height:1.55}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;display:flex;gap:6px;align-items:center;padding:10px 16px;background:var(--card);border-bottom:1px solid var(--bd);overflow-x:auto}
+nav b{font-size:20px;margin-right:auto;white-space:nowrap;background:linear-gradient(90deg,var(--pr),var(--ac));-webkit-background-clip:text;color:transparent}
+nav a{color:var(--tx);text-decoration:none;font-size:14px;padding:6px 12px;border-radius:99px;white-space:nowrap}nav a:hover{background:var(--bd)}
+section{max-width:1080px;margin:0 auto;padding:44px 18px}h2{font-size:28px;margin:0 0 6px}.sub{color:var(--mu);margin:0 0 22px}
+.hero{text-align:center;padding-top:64px}.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.15;margin:0 0 14px}.hero h1 span{background:linear-gradient(90deg,var(--pr),var(--ac));-webkit-background-clip:text;color:transparent}
+.btn{background:var(--pr);color:#fff;border:0;padding:11px 22px;border-radius:10px;font:600 15px Poppins,sans-serif;cursor:pointer;text-decoration:none;display:inline-block}.btn.alt{background:transparent;color:var(--tx);border:1px solid var(--bd)}.btn.ai{background:linear-gradient(90deg,var(--pr),var(--ac))}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px}.card h3{margin:8px 0 4px;font-size:17px}.card p{margin:0;color:var(--mu);font-size:14px}.ico{font-size:28px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}@media(max-width:800px){.two{grid-template-columns:1fr}}
+label{display:block;font-size:13px;font-weight:600;margin:12px 0 4px}input,select,textarea{width:100%;padding:10px;border:1px solid var(--bd);border-radius:9px;background:var(--bg);color:var(--tx);font:inherit;font-size:14px}textarea{min-height:80px;resize:vertical}
+.chk{display:flex;flex-wrap:wrap;gap:8px}.chk label{display:flex;gap:6px;align-items:center;margin:0;font-weight:500;border:1px solid var(--bd);padding:6px 10px;border-radius:99px;cursor:pointer}.chk input{width:auto}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:6px 14px;border-radius:99px;cursor:pointer;font:500 13px Poppins}.chip.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+.thumb{height:110px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:38px;color:#fff;margin-bottom:8px}
+.tag{font-size:11px;background:var(--bd);padding:2px 9px;border-radius:99px;color:var(--mu)}
+.sw{display:flex;gap:8px;flex-wrap:wrap}.sw button{width:46px;height:30px;border-radius:8px;border:2px solid var(--bd);cursor:pointer;padding:0}.sw button.on{border-color:var(--tx);outline:2px solid var(--pr)}
+.cp{display:flex;gap:10px}.cp input{padding:2px;height:38px}
+iframe{width:100%;height:560px;border:1px solid var(--bd);border-radius:12px;background:#fff}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.note{font-size:13px;color:var(--mu);margin-top:8px}
+#ai-box{background:var(--bg);border:1px dashed var(--pr);border-radius:10px;padding:10px;font-size:14px;margin-top:10px;display:none;white-space:pre-wrap}
+footer{text-align:center;color:var(--mu);font-size:13px;padding:30px}
+.plan.cur{border:2px solid var(--pr)}.plan h3{font-size:20px}.price{font-size:26px;font-weight:700}.price small{font-size:13px;color:var(--mu)}.plan ul{padding-left:18px;color:var(--mu);font-size:14px;margin:8px 0 12px}
+</style></head><body>
+<nav><b>Webzea</b><a href="#services">Services</a><a href="#order">Order</a><a href="#projects">Projects</a><a href="#generator">Landing Generator</a><a href="#admin" id="adm" hidden>Orders</a><span class="tag" id="acct" style="white-space:nowrap">👤 Guest</span></nav>
+
+<section class="hero"><p class="tag" style="display:inline-block">Your Digital Growth Partner</p>
+<h1>Websites &amp; Digital Marketing <span>that grow your business</span></h1>
+<p class="sub" style="max-width:600px;margin:0 auto 22px">Apna order do, hum website, landing page aur marketing ka poora kaam sambhalenge – AI-powered speed ke saath.</p>
+<a class="btn" href="#order">Place an Order</a> <a class="btn alt" href="#generator">Try Landing Generator</a></section>
+
+<section id="services"><h2>Our Services</h2><p class="sub">Click a service to add it to your order.</p><div class="grid" id="svc"></div></section>
+
+<section id="order"><h2>Place Your Order</h2><p class="sub">Requirement batao – AI aapke liye best package suggest karega.</p>
+<div class="card two"><div>
+<label>Your name *</label><input id="o-name"><label>Phone / WhatsApp *</label><input id="o-ph" inputmode="tel"><label>Email</label><input id="o-em" type="email">
+<label>Business type</label><input id="o-biz" placeholder="e.g. coaching institute, salon"></div><div>
+<label>Services needed</label><div class="chk" id="o-svc"></div>
+<label>Budget</label><select id="o-bud"><option>Under ₹10,000</option><option>₹10,000 – ₹30,000</option><option>₹30,000 – ₹75,000</option><option>₹75,000+</option></select>
+<label>Project details</label><textarea id="o-det" placeholder="Goals, pages needed, deadline…"></textarea></div>
+<div style="grid-column:1/-1"><div class="row" style="margin-top:0"><button class="btn ai" id="o-ai">✨ AI: Suggest my package</button><button class="btn" id="o-go">Submit Order</button></div><div id="ai-box"></div><div class="note" id="o-msg"></div></div></div></section>
+
+<section id="projects"><h2>Our Built Projects</h2><p class="sub">Selected work (sample entries – replace with your real projects).</p><div class="chips" id="pf"></div><div class="grid" id="pg"></div></section>
+
+<section id="generator"><h2>Landing Page Generator</h2><p class="sub">Fully paid: no free tier. Sign in, set your account password, then subscribe to generate, preview and download landing pages.</p>
+<div id="uacc" class="card" style="margin-bottom:14px;max-width:420px"></div>
+<div id="gwrap" hidden>
+<div id="plans" class="grid" style="margin-bottom:8px"></div><div class="note" id="plan-bar"></div><div class="row" style="margin:0 0 10px"><button class="chip" id="asc" hidden></button></div>
+<div class="card" id="pay" hidden style="margin:14px 0"><h3>💳 Payment Gateway Checkout</h3><div id="pay-sum" class="note" style="font-size:15px;margin-bottom:10px"></div>
+<label>Payment method</label><div class="chk"><label><input type="radio" name="pm" id="pm-upi" checked> UPI</label><label><input type="radio" name="pm" id="pm-card"> Card</label></div>
+<div id="pm-upi-box"><p id="pay-t"></p><label>Your name (as on UPI)</label><input id="pay-ct"><label>UPI transaction ID (after paying)</label><input id="pay-tx"><div class="row"><button class="btn" id="pay-go">Submit payment for verification</button></div></div>
+<div id="pm-card-box" hidden class="note">Card gateway (Razorpay/Stripe) needs a live backend and isn't wired up in this preview — please pay via UPI for now.</div>
+<div class="note" id="pay-msg"></div></div><br>
+<div class="two"><div class="card">
+<label>Business / Page name *</label><input id="g-name" value="Bright Steps Academy">
+<label>Category</label><select id="g-cat"></select>
+<label>Tagline / Headline</label><input id="g-tag" placeholder="Leave empty for auto">
+<label>Content / About</label><textarea id="g-about" placeholder="Describe your business, offers, USP…"></textarea>
+<label>Call-to-action text</label><input id="g-cta" value="Get Started">
+<label>Contact (phone / email)</label><input id="g-ct" placeholder="+91 98XXXXXXXX">
+<label>Color combination</label><div class="sw" id="g-sw"></div>
+<div class="cp" style="margin-top:8px"><input type="color" id="g-c1" value="#5b3df5"><input type="color" id="g-c2" value="#00c2a8"></div>
+<label>Font style</label><select id="g-font"><option value="Poppins">Modern – Poppins</option><option value="Playfair Display">Elegant – Playfair Display</option><option value="Space Grotesk">Techy – Space Grotesk</option><option value="Baloo 2">Playful – Baloo 2</option></select>
+<label>Design style (theme)</label><select id="g-style"><option value="gradient">Gradient hero</option><option value="minimal">Clean minimal</option><option value="dark">Dark bold</option></select>
+<label>Layout (UI structure)</label><select id="g-layout"><option value="classic">Classic – centered hero</option><option value="split">Split – image side hero</option><option value="sidebar">Sidebar – side nav</option><option value="cards">Card grid – boxed sections</option></select>
+<div class="row"><button class="btn ai" id="g-ai">✨ Generate with AI copy</button><button class="btn alt" id="g-gen">Generate (no AI)</button></div><div class="note" id="g-msg"></div></div>
+<div><iframe id="g-pv" title="Preview"></iframe><div class="row"><button class="btn" id="g-dl">Download HTML</button><button class="btn alt" id="g-cp">Copy code</button></div></div></div>
+</div></section>
+
+<section id="alog" hidden style="max-width:420px;margin:60px auto;text-align:center"><h2>🔑 Admin Login</h2><p class="sub" id="adm-sub">Owner account detected. Enter the admin password to open the dashboard.</p><input id="adm-user" type="text" placeholder="Admin username" style="margin-bottom:10px" autocomplete="username"><input id="adm-pass" type="password" placeholder="Admin password" style="margin-bottom:10px" autocomplete="current-password"><input id="adm-pass2" type="password" placeholder="Confirm password" style="margin-bottom:10px" hidden autocomplete="new-password"><button class="btn" id="adm-go">Unlock Dashboard</button><div class="note" id="adm-msg"></div><p class="note" style="margin-top:16px"><a href="#" id="adm-reset">Forgot / reset admin password</a></p></section>
+<section id="admin" hidden><h2>Client Orders</h2><p class="sub">Visible only to the owner.</p><div class="grid" id="ol"></div><h2 style="margin-top:30px">Subscription Requests</h2><p class="sub">Verify the UPI payment, then approve.</p><div class="grid" id="sl"></div><h2 style="margin-top:30px">Activity Log</h2><div class="card" id="lg" style="overflow-x:auto;font-size:13px"></div></section>
+<footer>© Webzea – Your Digital Growth Partner</footer>
+
+<script>
+const $=id=>document.getElementById(id),esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const SV=[["🌐","Website Development","Business, portfolio & e-commerce sites"],["🚀","Landing Pages","High-converting single pages"],["🔍","SEO","Rank higher on Google"],["📱","Social Media Marketing","Content, reels & page management"],["🎯","Ads (Google/Meta)","Lead-generation campaigns"],["🎨","Branding & Logo","Identity that stands out"],["🤖","AI Chatbot & Automation","24×7 lead handling"]];
+const PJ=[["Web","🎓","Coaching Institute Site","React · PHP","#5b3df5,#00c2a8"],["Web","🛍️","Fashion Store","E-commerce","#f5576c,#f093fb"],["Landing","🏥","Clinic Landing Page","HTML · CSS · JS","#00b09b,#96c93d"],["Marketing","📈","Real-Estate Ad Campaign","Meta Ads · SEO","#f7971e,#ffd200"],["Landing","🍽️","Restaurant Offer Page","Landing","#e52d27,#b31217"],["Marketing","📱","Salon Social Growth","Social Media","#4776e6,#8e54e9"]];
+const CAT={Education:["🎓",["Expert Teachers","Flexible Batches","Proven Results"]],Restaurant:["🍽️",["Fresh Ingredients","Fast Delivery","Loved by Locals"]],"Health & Clinic":["🏥",["Experienced Doctors","Easy Appointments","Patient-first Care"]],"E-commerce":["🛍️",["Best Prices","Secure Checkout","Easy Returns"]],"Real Estate":["🏡",["Verified Listings","Prime Locations","Transparent Deals"]],"Startup / SaaS":["🚀",["Fast Setup","Built to Scale","24×7 Support"]],Fitness:["💪",["Certified Trainers","Custom Plans","Real Progress"]],Portfolio:["✨",["Creative Work","Clean Process","On-time Delivery"]]};
+const PAL=[["#5b3df5","#00c2a8"],["#ff5e62","#ff9966"],["#0f766e","#84cc16"],["#1e3a8a","#38bdf8"],["#7c3aed","#f472b6"],["#111827","#f59e0b"]];
+let S=null,DB=null,GEN="";
+// services + order chips
+$("svc").innerHTML=SV.map((s,i)=>`<div class="card"><div class="ico">${s[0]}</div><h3>${s[1]}</h3><p>${s[2]}</p><div class="row"><button class="chip" onclick="pick(${i})">+ Add to order</button></div></div>`).join("");
+$("o-svc").innerHTML=SV.map((s,i)=>`<label><input type="checkbox" value="${s[1]}" id="sv${i}"> ${s[1]}</label>`).join("");
+function pick(i){$("sv"+i).checked=true;location.hash="#order"}
+// projects
+const cats=["All",...new Set(PJ.map(p=>p[0]))];let pc="All";
+function rp(){$("pf").innerHTML=cats.map(c=>`<button class="chip ${c==pc?"on":""}" onclick="pc='${c}';rp()">${c}</button>`).join("");
+$("pg").innerHTML=PJ.filter(p=>pc=="All"||p[0]==pc).map(p=>`<div class="card"><div class="thumb" style="background:linear-gradient(135deg,${p[4]})">${p[1]}</div><h3>${p[2]}</h3><p>${p[3]}</p><span class="tag">${p[0]}</span></div>`).join("")}rp();
+// generator setup
+$("g-cat").innerHTML=Object.keys(CAT).map(c=>`<option>${c}</option>`).join("");
+$("g-sw").innerHTML=PAL.map((p,i)=>`<button style="background:linear-gradient(135deg,${p[0]},${p[1]})" onclick="sw(${i})" title="Palette ${i+1}"></button>`).join("");
+function sw(i){$("g-c1").value=PAL[i][0];$("g-c2").value=PAL[i][1];[...$("g-sw").children].forEach((b,j)=>b.classList.toggle("on",i==j))}
+function build(d){const [ic,fs]=CAT[d.cat]||CAT.Portfolio,c1=d.c1,c2=d.c2,dk=d.style=="dark",mn=d.style=="minimal",lay=d.layout||"classic";
+const feats=(d.features&&d.features.length?d.features:fs.map(t=>({t,d:"We deliver quality you can rely on, every single time."}))).slice(0,3);
+const bg=dk?"#0b0d16":"#fff",tx=dk?"#f2f3fa":"#151a2e",hb=mn?bg:`linear-gradient(135deg,${c1},${c2})`,hc=mn?tx:"#fff";
+const featsHTML=feats.map(f=>`<div class="c"><h3>${esc(f.t)}</h3><p>${esc(f.d)}</p></div>`).join("");
+const nav=`<b>${esc(d.name)}</b>`,ctaLink=/@/.test(d.ct)?"mailto:"+esc(d.ct):"tel:"+esc(d.ct);
+const heroClassic=`<header class="h"><div style="font-size:46px">${ic}</div>${nav}<h1>${esc(d.tag)}</h1><p>${esc(d.sub)}</p><a class="b" href="#contact">${esc(d.cta)}</a></header>`;
+const heroSplit=`<header class="h split"><div class="hc"><div style="font-size:40px">${ic}</div>${nav}<h1>${esc(d.tag)}</h1><p>${esc(d.sub)}</p><a class="b" href="#contact">${esc(d.cta)}</a></div><div class="hv">${ic}</div></header>`;
+const heroCards=`<header class="h" style="padding:60px 20px"><div style="font-size:40px">${ic}</div>${nav}<h1 style="font-size:clamp(26px,5vw,40px)">${esc(d.tag)}</h1><p>${esc(d.sub)}</p><a class="b" href="#contact">${esc(d.cta)}</a></header>`;
+const body_classic=`${heroClassic}<section class="w"><h2>Why choose ${esc(d.name)}?</h2><div class="g">${featsHTML}</div></section><section class="w" style="padding-top:0"><h2>About Us</h2><p style="text-align:center;max-width:700px;margin:auto">${esc(d.about)}</p></section><section class="f" id="contact"><h2 style="color:#fff">Ready to begin?</h2><p>${esc(d.ct)}</p><a class="b" href="${ctaLink}">${esc(d.cta)}</a></section>`;
+const body_split=`${heroSplit}<section class="w"><h2>Why choose ${esc(d.name)}?</h2><div class="g">${featsHTML}</div></section><section class="w" style="padding-top:0"><h2>About Us</h2><p style="text-align:center;max-width:700px;margin:auto">${esc(d.about)}</p></section><section class="f" id="contact"><h2 style="color:#fff">Ready to begin?</h2><p>${esc(d.ct)}</p><a class="b" href="${ctaLink}">${esc(d.cta)}</a></section>`;
+const body_sidebar=`<div class="sw2"><aside class="sd"><div style="font-size:34px">${ic}</div>${nav}<nav class="sn"><a href="#about">About</a><a href="#why">Why us</a><a href="#contact">Contact</a></nav><a class="b" style="margin-top:20px" href="#contact">${esc(d.cta)}</a></aside><main class="mc"><section class="h" style="border-radius:18px"><h1>${esc(d.tag)}</h1><p>${esc(d.sub)}</p></section><section id="why"><h2>Why choose ${esc(d.name)}?</h2><div class="g">${featsHTML}</div></section><section id="about" style="padding-top:0"><h2>About Us</h2><p>${esc(d.about)}</p></section><section class="f" id="contact" style="border-radius:18px"><h2 style="color:#fff">Ready to begin?</h2><p>${esc(d.ct)}</p><a class="b" href="${ctaLink}">${esc(d.cta)}</a></section></main></div>`;
+const body_cards=`${heroCards}<section class="w"><div class="g"><div class="c" style="grid-column:1/-1"><h2 style="margin-top:0">About Us</h2><p>${esc(d.about)}</p></div>${feats.map(f=>`<div class="c"><h3>${esc(f.t)}</h3><p>${esc(f.d)}</p></div>`).join("")}<div class="c f" id="contact" style="grid-column:1/-1;border-radius:14px"><h2 style="color:#fff;margin-top:0">Ready to begin?</h2><p>${esc(d.ct)}</p><a class="b" href="${ctaLink}">${esc(d.cta)}</a></div></div></section>`;
+const layouts={classic:body_classic,split:body_split,sidebar:body_sidebar,cards:body_cards};
+return `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(d.name)}</title>
+<link href="https://fonts.googleapis.com/css2?family=${d.font.replace(/ /g,"+")}:wght@400;600;700&display=swap" rel="stylesheet">
+<style>*{box-sizing:border-box}body{margin:0;font-family:'${d.font}',system-ui,sans-serif;background:${bg};color:${tx};line-height:1.6}
+.h{background:${hb};color:${hc};text-align:center;padding:90px 20px}.h h1{font-size:clamp(30px,6vw,52px);margin:10px auto;max-width:760px;line-height:1.15}.h p{max-width:600px;margin:0 auto 26px;opacity:.9}
+.h.split{display:flex;align-items:center;justify-content:space-between;text-align:left;gap:30px;flex-wrap:wrap}.h.split .hc{flex:1;min-width:260px}.h.split .hv{flex:1;min-width:200px;font-size:120px;text-align:center;opacity:.85}
+.b{display:inline-block;background:${mn?c1:"#fff"};color:${mn?"#fff":c1};padding:13px 30px;border-radius:${mn?"6px":"99px"};font-weight:700;text-decoration:none}
+.w{max-width:960px;margin:0 auto;padding:60px 20px}.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.c{border:1px solid ${dk?"#262a44":"#e6e8f2"};border-radius:14px;padding:22px;border-top:4px solid ${c1}}.c h3{margin:0 0 6px;color:${c1}}h2{text-align:center;margin:0 0 26px}
+.f{background:${c2};color:#fff;text-align:center;padding:50px 20px}.f .b{background:#fff;color:${c1}}footer{text-align:center;padding:20px;font-size:13px;opacity:.7}
+.sw2{display:flex;min-height:100vh}.sd{width:230px;background:${hb};color:${hc};padding:30px 20px;display:flex;flex-direction:column;flex-shrink:0}.sn{display:flex;flex-direction:column;gap:10px;margin:20px 0}.sn a{color:${hc};opacity:.9;text-decoration:none}.mc{flex:1;padding:20px 30px}@media(max-width:700px){.sw2{flex-direction:column}.sd{width:auto}}
+</style></head><body>
+${layouts[lay]||body_classic}
+<footer>© ${esc(d.name)}. Built with Webzea.</footer>${d.wm?'<div style="position:fixed;bottom:10px;right:10px;background:#000;color:#fff;padding:6px 12px;border-radius:99px;font-size:12px">Made with Webzea Free</div>':''}</body></html>`}
+function form(x){const n=$("g-name").value.trim()||"Your Brand";return Object.assign({name:n,cat:$("g-cat").value,tag:$("g-tag").value.trim()||`${n} – Built for your success`,sub:"Trusted by hundreds of happy customers. Discover what makes us different.",about:$("g-about").value.trim()||`${n} is dedicated to delivering top-quality service with a personal touch.`,cta:$("g-cta").value||"Get Started",ct:$("g-ct").value||"hello@example.com",c1:$("g-c1").value,c2:$("g-c2").value,font:$("g-font").value,style:$("g-style").value,layout:$("g-layout").value,wm:PL().wm},x||{})}
+function show(d){if(locked())return;GEN=build(d);$("g-pv").srcdoc=GEN}
+$("g-gen").onclick=()=>{if(!use())return;show(form());$("g-msg").textContent="Page generated ✔"};
+$("g-ai").onclick=async()=>{if(!PL().ai){$("g-msg").textContent="AI copy is a Pro feature – upgrade above.";location.hash="#plans";return}if(!S){$("g-msg").textContent="AI is not available in this view – use 'Generate (no AI)'.";return}
+if(!use())return;const d=form();$("g-msg").textContent="AI is writing your copy…";
+try{const r=await S.json(`Write landing page copy. Business: ${d.name}. Category: ${d.cat}. Notes: ${$("g-about").value||"none"}. Keep the same language as the notes (English default). Return ONLY JSON: {"tag":"headline max 10 words","sub":"one sentence","about":"2-3 sentences","features":[{"t":"title","d":"one sentence"},{"t":"","d":""},{"t":"","d":""}]}`);
+show(form({tag:$("g-tag").value.trim()||r.tag,sub:r.sub,about:$("g-about").value.trim()?r.about:r.about,features:r.features}));$("g-msg").textContent="AI copy applied ✔"}catch(e){$("g-msg").textContent="AI failed ("+(e.code||"error")+"). Try again or use no-AI."}};
+$("g-cp").onclick=async()=>{if(!PL().dl){$("g-msg").textContent="Copy & download need the Starter or Pro plan.";location.hash="#plans";return}if(!GEN)show(form());try{await navigator.clipboard.writeText(GEN);lg("copy",$("g-name").value);$("g-msg").textContent="Code copied ✔"}catch(e){$("g-msg").textContent="Copy blocked – use Download."}};
+$("g-dl").onclick=async()=>{if(!PL().dl){$("g-msg").textContent="Copy & download need the Starter or Pro plan.";location.hash="#plans";return}if(!GEN)show(form());const D=await claude.use("downloads").catch(()=>null);if(!D){$("g-msg").textContent="Download unavailable here – use Copy code.";return}
+try{await D.save({filename:(($("g-name").value||"landing").toLowerCase().replace(/\W+/g,"-"))+".html",data:GEN});lg("download",$("g-name").value)}catch(e){$("g-msg").textContent="Save cancelled."}};
+const UPI="yourname@upi",NONE={n:"No plan",p:0,gens:0,dl:false,ai:false,wm:true,f:[]},LOCK='<body style="font:16px sans-serif;display:flex;height:100vh;align-items:center;justify-content:center;text-align:center;color:#555;padding:20px">🔒 Subscribe to generate, preview &amp; download landing pages</body>',PLANS={starter:{n:"Starter",p:499,gens:20,dl:true,ai:false,wm:false,f:["20 generations / month","Download & copy HTML","No badge"]},pro:{n:"Pro",p:1499,gens:1e9,dl:true,ai:true,wm:false,f:["Unlimited generations","AI-written copy","Download & copy HTML","Priority support"]}};
+function lg(t,d){if(DB&&UID)DB.collection("logs").add({uid:UID,t,d:String(d||"").slice(0,120),ts:Date.now()}).catch(()=>{})}
+async function sha(s){const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("")}
+let ADM=false,UID=null,OWN=false,ASC=false,SUB=null,USE={m:"",n:0},sel=null,pend=false,ADMACC=null,AUTH=null,AOK=false;
+const mk=()=>new Date().toISOString().slice(0,7),pk=()=>OWN&&!ASC?"pro":(!ASC&&SUB&&PLANS[SUB.plan]&&SUB.status=="active"&&SUB.exp>Date.now()?SUB.plan:"none"),PL=()=>PLANS[pk()]||NONE,locked=()=>PL()===NONE,used=()=>USE.m==mk()?USE.n:0;
+function use(){const p=PL();if(p===NONE){$("g-msg").textContent="🔒 Subscription required – choose a plan above.";location.hash="#plans";return false}if(used()>=p.gens){$("g-msg").textContent="Monthly limit reached ("+p.gens+"). Upgrade your plan to continue.";location.hash="#plans";return false}
+USE={m:mk(),n:used()+1};if(DB&&UID)DB.doc("data/users/"+UID+"/usage").set(USE).catch(()=>{});lg("generate",$("g-name").value);rp2();return true}
+function rp2(){const k=pk(),p=PL();$("asc").textContent=ASC?"↩ Exit client view":"👁 View as client (test paywall)";if(p===NONE){GEN="";$("g-pv").srcdoc=LOCK}else if(!GEN)show(form());$("plan-bar").textContent=(p===NONE?"🔒 No active subscription – generating, previewing and downloading are all paid. Choose a plan.":(OWN&&!ASC?"👑 Owner access (clients see this locked) · ":"")+"Current plan: "+p.n+(p.gens<1e9?" · "+used()+"/"+p.gens+" generations used this month":" · unlimited"))+(SUB&&SUB.status=="active"&&!OWN?" · valid till "+new Date(SUB.exp).toLocaleDateString():"")+(pend?" · activation pending":"");
+$("plans").innerHTML=Object.entries(PLANS).map(([j,q])=>`<div class="card plan ${j==k?"cur":""}"><h3>${q.n}</h3><div class="price">${q.p?"₹"+q.p+"<small>/mo</small>":"₹0"}</div><ul>${q.f.map(x=>`<li>${x}</li>`).join("")}</ul>${q.p?`<button class="btn ${j==k?"alt":""}" onclick="choose('${j}')">${j==k?"Renew":"Subscribe"}</button>`:""}</div>`).join("")}
+function choose(k){sel=k;$("pay").hidden=false;$("pay-sum").innerHTML=`Plan: <b>${PLANS[k].n}</b> &nbsp;·&nbsp; Amount: <b>₹${PLANS[k].p}</b> &nbsp;·&nbsp; Billing: 30 days`;$("pay-t").innerHTML=`Pay <b>₹${PLANS[k].p}</b> via UPI to <b>${UPI}</b>, then enter the transaction ID below. Your plan activates within 30 days after the owner verifies payment.`;$("pay").scrollIntoView({block:"center"})}
+$("pm-upi").onchange=$("pm-card").onchange=()=>{$("pm-upi-box").hidden=!$("pm-upi").checked;$("pm-card-box").hidden=$("pm-upi").checked};
+$("pay-go").onclick=async()=>{const t=$("pay-tx").value.trim(),c=$("pay-ct").value.trim(),m=$("pay-msg");if(!t||!c){m.textContent="Enter your name and the transaction ID.";return}
+if(!DB||!UID){m.textContent="Please open this page signed in on claude.ai to subscribe.";return}
+try{await DB.collection("subreqs").add({uid:UID,plan:sel,txn:t,contact:c,status:"pending",ts:Date.now()});pend=true;lg("sub_request",sel);m.textContent="Request sent ✔ – activation after payment verification.";rp2()}catch(e){m.textContent="Could not send ("+(e.code||"error")+")."}};
+async function appr(id,uid,p){if(!PLANS[p]||p=="free"||!/^[\w-]+$/.test(uid))return;await DB.doc("plans/"+uid).set({plan:p,status:"active",exp:Date.now()+30*864e5});await DB.doc("subreqs/"+id).update({status:"approved"});lg("approved",p+" · "+uid)}
+function rej(id){DB.doc("subreqs/"+id).update({status:"rejected"});lg("rejected",id)}
+$("asc").onclick=()=>{ASC=!ASC;GEN="";AOK=false;accView();rp2()};
+function admView(){const setup=!ADMACC;$("adm-sub").textContent=setup?"No admin account yet. Create a username and password.":"Enter your admin username and password.";$("adm-pass2").hidden=!setup;$("adm-user").value=setup?"":(ADMACC.username||"");$("adm-user").readOnly=!setup;$("adm-go").textContent=setup?"Create Account & Unlock":"Login"}
+$("adm-go").onclick=async()=>{const usr=$("adm-user").value.trim(),v=$("adm-pass").value,m=$("adm-msg");if(!usr){m.textContent="Enter a username.";return}if(v.length<4){m.textContent="Password must be at least 4 characters.";return}
+if(!ADMACC){if(v!==$("adm-pass2").value){m.textContent="Passwords don't match.";return}const hv=await sha(v);if(DB)await DB.doc("admin/config").set({username:usr,hash:hv});else lset(LS_A,{username:usr,hash:hv});ADMACC={username:usr,hash:hv};sessionStorage.setItem("wz_admin","1");ADM=true;$("alog").hidden=true;$("admin").hidden=false;lg("admin_setup",usr)}
+else if(usr!==ADMACC.username){m.textContent="Unknown username."}
+else{const hv=await sha(v);if(hv===ADMACC.hash){sessionStorage.setItem("wz_admin","1");ADM=true;$("alog").hidden=true;$("admin").hidden=false;lg("admin_login",usr)}else{m.textContent="Wrong password."}}};
+$("adm-reset").onclick=async(e)=>{e.preventDefault();if(!confirm("Reset the admin account? You'll create a new username & password."))return;if(DB)await DB.doc("admin/config").delete();else localStorage.removeItem(LS_A);ADMACC=null;admView();$("adm-msg").textContent="Account reset — create a new one below."};
+// user account password gate (per signed-in client, separate from claude sign-in)
+function accView(){const box=$("uacc");if(OWN&&!ASC){box.innerHTML="";AOK=true;$("gwrap").hidden=false;return}if(!UID){box.innerHTML="Sign in on claude.ai to create your Webzea account.";$("gwrap").hidden=true;return}
+if(AOK){box.innerHTML="";$("gwrap").hidden=false;return}
+$("gwrap").hidden=true;
+if(AUTH===null){box.innerHTML=`<h3>🔑 Create your Webzea account</h3><label>Username</label><input id="au"><label>Password</label><input id="ap1" type="password"><label>Confirm password</label><input id="ap2" type="password"><div class="row"><button class="btn" id="ap-go">Register & continue</button></div><div class="note" id="ap-msg"></div>`;
+$("ap-go").onclick=async()=>{const usr=$("au").value.trim(),a=$("ap1").value,b=$("ap2").value,m=$("ap-msg");if(!usr){m.textContent="Enter a username.";return}if(a.length<4){m.textContent="At least 4 characters.";return}if(a!==b){m.textContent="Passwords don't match.";return}const hv=await sha(a);if(DB&&UID!=="local")await DB.doc("data/users/"+UID+"/auth").set({username:usr,hash:hv});else lset(LS_U,{username:usr,hash:hv});AUTH={username:usr,hash:hv};AOK=true;lg("account_created",usr);accView()}}
+else{box.innerHTML=`<h3>🔒 Login to your Webzea account</h3><label>Username</label><input id="au2" value="${esc(AUTH.username||"")}" readonly><label>Password</label><input id="ap3" type="password" placeholder="Password"><div class="row"><button class="btn" id="ap-go2">Login</button></div><div class="note" id="ap-msg2"></div>`;
+$("ap-go2").onclick=async()=>{const v=$("ap3").value,m=$("ap-msg2");const hv=await sha(v);if(hv===AUTH.hash){AOK=true;lg("account_login",AUTH.username||"");accView()}else{m.textContent="Wrong password."}}}}
+sw(0);show(form());accView();rp2();
+// AI package suggestion
+$("o-ai").onclick=async()=>{const b=$("ai-box");b.style.display="block";if(!S){b.textContent="AI is not available in this view.";return}
+b.textContent="Thinking…";try{b.textContent=await S(`You are a sales consultant for Webzea, a digital agency offering: ${SV.map(s=>s[1]).join(", ")}. Client business: ${$("o-biz").value||"unknown"}. Budget: ${$("o-bud").value}. Details: ${$("o-det").value||"none"}. Suggest the best 2-4 services as a short package with one line of reasoning each and a rough timeline. Under 120 words, friendly, Hinglish OK.`).then(r=>r.text)}catch(e){b.textContent="AI failed. Please try again."}};
+// orders (db)
+$("o-go").onclick=async()=>{const n=$("o-name").value.trim(),p=$("o-ph").value.trim(),m=$("o-msg");if(!n||!p){m.textContent="Name and phone required.";return}
+const o={name:n,phone:p,email:$("o-em").value,biz:$("o-biz").value,services:SV.filter((s,i)=>$("sv"+i).checked).map(s=>s[1]),budget:$("o-bud").value,details:$("o-det").value,ts:Date.now()};
+if(!DB){m.textContent="Order saving is not available in this view.";return}
+try{await DB.collection("orders").add(o);lg("order",o.services.join(", "));m.textContent="Thank you "+n+"! Order received – hum jaldi contact karenge ✔"}catch(e){m.textContent="Could not save order ("+(e.code||"error")+")."}};
+const LS_U="wz_local_user_auth",LS_A="wz_local_admin_auth";
+function lget(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}}
+function lset(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+(async()=>{let DBx=null,u=null;
+if(window.claude){claude.use("sample").then(x=>S=x).catch(()=>{});try{DBx=await claude.use("db");u=await claude.use("user")}catch(e){}}
+if(DBx&&u){try{DB=DBx;OWN=await u.isOwner();UID=await u.id();{const me=await u.me();$("acct").textContent="👤 "+(me.name||"Signed in")+" · "+(OWN?"Admin":"User")}lg("login","");
+if(UID){DB.doc("plans/"+UID).onSnapshot(x=>{SUB=x.data()||null;rp2()});DB.doc("data/users/"+UID+"/usage").onSnapshot(x=>{USE=x.data()||{m:"",n:0};rp2()});DB.doc("data/users/"+UID+"/auth").onSnapshot(x=>{AUTH=x.data()||null;accView()})}
+if(OWN){$("asc").hidden=false;DB.doc("admin/config").onSnapshot(x=>{ADMACC=x.data()||null;admView()});if(sessionStorage.getItem("wz_admin")=="1"){ADM=true;$("adm").hidden=false;$("admin").hidden=false}else{$("adm").hidden=false;$("alog").hidden=false}
+DB.collection("orders").orderBy("ts","desc").onSnapshot(x=>{$("ol").innerHTML=x.docs.map(d=>{const o=d.data();return `<div class="card"><h3>${esc(o.name)}</h3><p>📞 ${esc(o.phone)} ${esc(o.email)}</p><p><b>${esc((o.services||[]).join(", "))}</b> · ${esc(o.budget)}</p><p>${esc(o.biz)} – ${esc(o.details)}</p></div>`}).join("")||"<p class='sub'>No orders yet.</p>"});
+DB.collection("subreqs").orderBy("ts","desc").onSnapshot(x=>{$("sl").innerHTML=x.docs.map(d=>{const o=d.data();return `<div class="card"><h3>${esc((PLANS[o.plan]||{}).n)} – ${esc(o.status)}</h3><p>${esc(o.contact)}</p><p>Txn: ${esc(o.txn)}</p>${o.status=="pending"?`<div class="row"><button class="btn" onclick="appr('${esc(d.id)}','${esc(o.uid)}','${esc(o.plan)}')">Approve 30 days</button><button class="btn alt" onclick="rej('${esc(d.id)}')">Reject</button></div>`:""}</div>`}).join("")||"<p class='sub'>No requests.</p>"});
+DB.collection("logs").orderBy("ts","desc").limit(50).onSnapshot(async x=>{const ds=x.docs.map(d=>d.data());let ps={};try{ps=await u.profiles([...new Set(ds.map(o=>o.uid))])}catch(e){}
+$("lg").innerHTML=ds.length?"<table style='width:100%;border-collapse:collapse'>"+ds.map(o=>`<tr style="border-bottom:1px solid var(--bd)"><td style="padding:5px">${new Date(o.ts).toLocaleString("en-IN")}</td><td>${esc((ps[o.uid]||{}).name||"Someone")}</td><td><b>${esc(o.t)}</b></td><td>${esc(o.d)}</td></tr>`).join("")+"</table>":"No activity yet."})}
+}catch(e){DB=null}}
+if(!DB){UID="local";ADMACC=lget(LS_A);AUTH=lget(LS_U);$("acct").textContent="👤 Guest (local device login)";$("adm").hidden=false;if(sessionStorage.getItem("wz_admin")=="1"){ADM=true;$("admin").hidden=false}else{$("alog").hidden=false}}
+admView();accView();rp2()})();
+</script></body></html>
